@@ -113,10 +113,10 @@ def getc():
         return None
         
 # FOR TESTING ONLY
-testvar = getc()
-print("You pressed: "+testvar)
-testvar = input("Now, test normal input: ")
-print("You writed: "+testvar)
+#testvar = getc()
+#print("You pressed: "+testvar)
+#testvar = input("Now, test normal input: ")
+#print("You writed: "+testvar)
 
 # - - - DOCUMENTATION
 # The termios module for Linux uses a list of terminal settings:
