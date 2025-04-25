@@ -1,7 +1,6 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  unigetc.py The universal char reader for Python
+#  getc.py The universal char reader for Python
 #  Local Mini Opensource AI. Prototype 1 version.
 #  
 #  Contributors:
