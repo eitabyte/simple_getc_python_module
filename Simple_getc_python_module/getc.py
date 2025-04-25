@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 #  getc.py The universal char reader for Python
@@ -22,7 +23,6 @@
 #  MA 02110-1301, USA.
 #  
 #   
-# see https://github.com/recantha/EduKit3-RC-Keyboard/blob/master/rc_keyboard.py
 
 # This function can be used with:
 # from getc import getc
@@ -113,10 +113,10 @@ def getc():
         return None
         
 # FOR TESTING ONLY
-#testvar = getc()
-#print("You pressed: "+testvar)
-#testvar = input("Now, test normal input: ")
-#print("You writed: "+testvar)
+testvar = getc()
+print("You pressed: "+testvar)
+testvar = input("Now, test normal input: ")
+print("You writed: "+testvar)
 
 # - - - DOCUMENTATION
 # The termios module for Linux uses a list of terminal settings:
@@ -132,11 +132,11 @@ def getc():
 #  * ONLCR  Change NL to CR-NL on output
 #  * OCRNL Change CR to NL on output
 #  cflag at position [2] is hardware settings:
-#  * CSIZE:
-#  * CSTOPB:
-#  * CREAD:
-#  * PARENB:
-#  * CLOCAL:
+#  * CSIZE: CS5, CS6, CS7 and CS8 bit sizes
+#  * CSTOPB: 2 stop bits
+#  * CREAD: Allows reception
+#  * PARENB: Allows parity
+#  * CLOCAL: Ignore modem's control lines
 #  lflag at position [3] control the local settings:
 #  * ICANON: Control's the line buffer (pressing enter to process entire line)
 #  * ECHO: Control the echo (show what user is writing)
